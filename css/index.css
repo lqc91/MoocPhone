@@ -4,9 +4,6 @@ BEM 设计模式
 元素（元素在模块之后，可以有多个层级，以 __ 连接）
 修饰（某元素或某模块特别的状态，必须有一个状态名和状态值，使用 _ 连接）
  */
-a{
-	text-decoration:none;
-}
 .header{
 	background:-webkit-linear-gradient(    left, #f3f3f3, #e2e2e2);
 	background:   -moz-linear-gradient(    left, #f3f3f3, #e2e2e2);
@@ -27,6 +24,7 @@ a{
 	width:132px;
 	height:40px;
 	line-height:40px;
+	font-family:'Microsoft YaHei Light';
 	font-size:20px;
 	color:#07111b;
 	text-indent:52px;
@@ -47,7 +45,7 @@ a{
 	position:relative;
 	float:left;
 	margin-left:48px;
-	font-family:'MicrosoftYaHeiUILight';
+	/*font-family:'Microsoft YaHei UI Light';*/
 	font-size:14px;
 	color:#07111b;
 }
@@ -74,4 +72,316 @@ a{
 	background:#07111b;
 	color:#fff;
 	text-align:center;
+}
+/* 第一屏 */
+.screen-1{
+	position:relative;
+	height:800px;
+	background:url('../img/screen-1-background.png') center center no-repeat;
+	background-size:cover; /*  */
+	overflow:hidden;
+}
+.screen-1__heading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	font-weight:normal;
+	font-size:48px;
+	color:#4d555d;
+	text-align:center;
+	padding-top:150px;
+}
+.screen-1__heading span{
+	color:#f01414;
+}
+.screen-1__phone{
+	position:absolute;
+	left:50%;
+	margin-left:-687px;
+	bottom:180px;
+	width:1375px;
+	height:305px;
+	background:url('../img/screen-1-phone.png') center center no-repeat;
+	z-index:2;
+}
+.screen-1__shadow{
+	position:absolute;
+	left:50%;
+	margin-left:-665px;
+	bottom:0;
+	width:1331px;
+	height:491px;
+	background:url('../img/screen-1-shadow.png') center center no-repeat;
+	z-index:1;
+	opacity:.8;
+}
+/* 第二屏 */
+.screen-2{
+	position:relative;
+	height:800px;
+	background:#fafafa;
+	overflow:hidden;
+}
+.screen-2__heading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	/*font-weight:normal;*/
+	font-size:48px;
+	line-height:48px;
+	color:#f01414;
+	text-align:center;
+	padding-top:96px;
+}
+.screen-2__subheading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	/*font-weight:normal;*/
+	font-size:16px;
+	color:#07111b;
+	text-align:center;
+	line-height:28px;
+	padding-top:30px;
+}
+.screen-2__phone{
+	position:absolute;
+	left:50%;
+	margin-left:-464px;
+	bottom:-343px;
+	width:928px;
+	height:873px;
+	background:url('../img/screen-2-phone.png') center center no-repeat;
+}
+.screen-2__point{
+	position:absolute;
+	width:111px;
+	height:24px;
+	line-height:24px;
+	font-size:24px;
+	font-family:'Microsoft YaHei UI Light';
+	color:#4d555d;
+	padding-right:111px;
+	background:url('../img/icon-point-right.png') center right no-repeat;
+}
+.screen-2__point_custom_left{
+	padding-left:111px;
+	text-align:right;
+	background:url('../img/icon-point-left.png') center left no-repeat;
+}
+.screen-2__point_i_1{
+	top:156px;
+	left:-165px;
+}
+.screen-2__point_i_2{
+	top:38px;
+	right:15px; /* 与测量值不符，？ */
+}
+.screen-2__point_i_3{
+	top:342px;
+	right:-90px; /* 与测量值不符，？ */
+}
+/* 第三屏 */
+.screen-3{
+	height:800px;
+	overflow:hidden;
+	background:-webkit-linear-gradient(       top left, #931317, #f01414);
+	background:   -moz-linear-gradient(       top left, #931317, #f01414);
+	background:     -o-linear-gradient(       top left, #931317, #f01414);
+	background:        linear-gradient(to bottom right, #931317, #f01414);
+}
+.screen-3__wrap{
+	position:relative;
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+}
+.screen-3__heading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	/*font-weight:normal;*/
+	font-size:48px;
+	line-height:48px;
+	color:#fff;
+	text-align:left;
+	padding-top:96px;
+}
+.screen-3__subheading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	/*font-weight:normal;*/
+	font-size:16px;
+	color:#fff;
+	text-align:left;
+	line-height:28px;
+	padding-top:30px;
+}
+.screen-3__phone{
+	position:absolute;
+	top:200px;
+	right:0;
+	width:729px;
+	height:900px;
+	background:url('../img/screen-3-phone.png') center center no-repeat;
+}
+.screen-3__features{
+	position:absolute;
+	top:398px;
+	left:0;
+	width:328px;
+	height:288px;
+}
+.screen-3__features__item{
+	float:left;
+	width:138px;
+	height:118px;
+	border:1px solid #c67173;
+	border-radius:3px;
+	margin:0 24px 24px 0;
+	color:#fff;
+	text-align:center;
+}
+.screen-3__features__item__number{
+	height:36px;
+	font-size:36px;
+	line-height:36px;
+	padding:30px 0 8px 0;
+}
+.screen-3__features__item__desc{
+	height:16px;
+	font-size:16px;
+	line-height:16px;
+}
+/* 第四屏 */
+.screen-4{
+	height:800px;
+	background:#fff;
+	overflow:hidden;
+	position:relative;
+}
+.screen-4__wrap{
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+}
+.screen-4__heading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	font-size:48px;
+	color:#f01414;
+	text-align:center;
+	padding-top:130px;
+}
+.screen-4__subheading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	font-size:16px;
+	color:#07111b;
+	text-align:center;
+	line-height:30px;
+	padding-top:30px;
+}
+.screen-4__type{
+	width:1240px;
+	height:270px;
+	position:absolute;
+	top:305px;
+}
+.screen-4__type__item{
+	float:left;
+	position:relative;
+	text-align:center;
+	width:270px;
+	height:270px;
+	margin-right:40px;
+	background-size:cover;
+}
+.screen-4__type__item__color{
+	width:100%;
+	height:16px;
+	line-height:16px;
+	font-size:16px;
+	color:#07111b;
+	position:absolute;
+	bottom:-46px;
+}
+.screen-4__type__item_i_1{
+	background:url('../img/screen-4-phone-red.png') left top no-repeat;
+}
+.screen-4__type__item_i_2{
+	background:url('../img/screen-4-phone-gold.png') left top no-repeat;
+}
+.screen-4__type__item_i_3{
+	background:url('../img/screen-4-phone-grey.png') left top no-repeat;
+}
+.screen-4__type__item_i_4{
+	background:url('../img/screen-4-phone-black.png') left top no-repeat;
+}
+.screen-4__type__item__storage{
+	width:100%;
+	height:12px;
+	line-height:12px;
+	font-size:12px;
+	color:#93999f;
+	position:absolute;
+	bottom:-68px;
+}
+/* 第五屏 */
+.screen-5{
+	position:relative;
+	height:800px;
+	background:#d9dde1;
+	background-size:cover; /*  */
+	overflow:hidden;
+}
+.screen-5__background{
+	width:1920px;
+	height:432px;
+	background:url('../img/screen-5-background.png') center no-repeat;
+	background-size:contain;
+	position:absolute;
+	left:50%;
+	margin-left:-960px;
+	bottom:-106px;
+}
+.screen-5__heading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	font-size:48px;
+	color:#f01414;
+	text-align:center;
+	padding-top:135px;
+}
+.screen-5__subheading{
+	/*font-family:'Microsoft YaHei UI Light';*/
+	font-size:16px;
+	color:#07111b;
+	text-align:center;
+	line-height:16px;
+	padding-top:36px;
+}
+/* 立即购买 */
+.screen-buy{
+	position:relative;
+	height:80px;
+	padding:120px 0;
+	overflow:hidden;
+	text-align:center;
+	background:#2b333b url('../img/screen-6-background.png') center no-repeat;
+}
+.screen-buy__button{
+	display:inline-block;
+	width:240px;
+	height:80px;
+	line-height:80px;
+	text-align:center;
+	font-family:'Microsoft YaHei UI Light';
+	font-size:24px;
+	color:#fff;
+	background:#f01414;
+	border-radius:3px;
+	transition:all .5s;
+}
+.screen-buy__button:hover{
+	box-shadow:5px 5px 5px 5px rgba(0,0,0,.5);
+}
+/* footer */
+.footer{
+	height:80px;
+	line-height:80px;
+	text-align:center;
+	color:#fff;
+	font-size:12px;
+	font-family:'Microsoft YaHei UI Light';
+	background-color:#07111b;
 }
