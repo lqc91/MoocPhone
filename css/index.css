@@ -44,7 +44,9 @@ BEM 设计模式
 	display:block;
 	position:relative;
 	float:left;
-	margin-left:48px;
+	width:30px;
+	text-align:center;
+	padding-left:48px;
 	/*font-family:'Microsoft YaHei UI Light';*/
 	font-size:14px;
 	color:#07111b;
@@ -55,7 +57,7 @@ BEM 设计模式
 .header__nav-item_status_active{
 	color:#f01414;
 }
-.header__nav-item_status_active::after{
+/*.header__nav-item_status_active::after{
 	content:'';
 	display:block;
 	position:absolute;
@@ -64,7 +66,7 @@ BEM 设计模式
 	width:100%;
 	height:2px;
 	background-color:#f01414;
-}
+}*/
 .header__nav-item_status_active{}
 .header__nav-item_custom_button{
 	width:90px;
@@ -72,6 +74,8 @@ BEM 设计模式
 	background:#07111b;
 	color:#fff;
 	text-align:center;
+	padding:0;
+	margin-left:48px;
 }
 /* 第一屏 */
 .screen-1{
@@ -384,4 +388,41 @@ BEM 设计模式
 	font-size:12px;
 	font-family:'Microsoft YaHei UI Light';
 	background-color:#07111b;
+}
+/* outline */
+.outline{
+	position:fixed;
+	padding:0 12px;
+	right:0;
+	bottom:50px;
+	z-index:3;
+	background-color:#fff;
+	box-shadow:0 4px 12px rgba(0, 0, 0, .5);
+}
+.outline__item{
+	display:block;
+	width:32px;
+	height:46px;
+	text-align:center;
+	line-height:46px;
+	background-color:#fff;
+	font-size:12px;
+	border-top:1px solid #edf1f2;
+	color:#07111b;
+}
+.outline__item:first-child{
+	border:none;
+}
+.outline__item_status_active{
+	color:red;
+}
+.header__nav-tip{
+	position:absolute;
+	width:30px;
+	height:2px;
+	background-color:red;
+	bottom:0;
+	left:0;
+	margin-left:48px;
+	transition:all .5s;
 }
